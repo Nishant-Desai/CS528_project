@@ -29,15 +29,17 @@ public class StarDataLoader : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+        Debug.Log("Hello");
         string allData = stardata_file.text;
         string[] lineData = allData.Split(new[] {Environment.NewLine}, StringSplitOptions.None);
         for (var i=1; i < lineData.Length-1; i++)
         {
+            Debug.Log("Hello");
             string[] eachline = lineData[i].Split(',');
             var star = Instantiate(star_prefab, new Vector3(float.Parse(eachline[2]), float.Parse(eachline[3]), float.Parse(eachline[4])), Quaternion.identity, gameObject.transform);
             star.name = "S" + star_count;
             star_count++;
-
+            Debug.Log("Hello");
             LoadData star1 = new LoadData();
             //star1.absoluteMagnitude = float.Parse(eachline[5]);
             //star1.distance = float.Parse(eachline[1]);
@@ -65,7 +67,7 @@ public class StarDataLoader : MonoBehaviour
 
         
         string[] eachLine2 = lineData2[2].Split(' ');
-        Debug.Log(eachLine2[0]);
+        //Debug.Log(eachLine2[0]);
         var constellation = new GameObject();
         constellation.name = eachLine2[0];
         constellation.transform.parent = mainConst.transform;

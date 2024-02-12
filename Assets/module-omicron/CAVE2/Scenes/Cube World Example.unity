@@ -473,7 +473,7 @@ MonoBehaviour:
   star_prefab: {fileID: 7307428506394332579, guid: 3f8bcc44b8d51b14a9318c913804f97d,
     type: 3}
   text_prefab: {fileID: 0}
-  stardata_file: {fileID: 4900000, guid: 891eb6b8a6c461f4dae5f566e2110393, type: 3}
+  stardata_file: {fileID: 4900000, guid: 6c0c4955fd4a1444ba07263072fa1778, type: 3}
   linePrefab: {fileID: 6061481997634690398, guid: eb936824b7b00f44089f14de85ea1022,
     type: 3}
   const_file: {fileID: 4900000, guid: 24c4cf97579d0994db9bb97407897135, type: 3}
@@ -508,11 +508,6 @@ PrefabInstance:
     - target: {fileID: 1000012201446588, guid: 542475707c6b5644dac416d70a41eb31, type: 3}
       propertyPath: m_Name
       value: CAVE2-Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6648211220538475457, guid: 542475707c6b5644dac416d70a41eb31,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011540618614, guid: 542475707c6b5644dac416d70a41eb31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -558,46 +553,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1235559894020893472, guid: 542475707c6b5644dac416d70a41eb31,
-        type: 3}
-      propertyPath: headTracker
-      value: 
-      objectReference: {fileID: 1414880794}
     - target: {fileID: 2717644653638251209, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
       propertyPath: cameraController
       value: 
       objectReference: {fileID: 1477776056}
-    - target: {fileID: 2018825010303196076, guid: 542475707c6b5644dac416d70a41eb31,
+    - target: {fileID: 1235559894020893472, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4027452721525705446, guid: 542475707c6b5644dac416d70a41eb31,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4169139798118923136, guid: 542475707c6b5644dac416d70a41eb31,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4169139798118923136, guid: 542475707c6b5644dac416d70a41eb31,
-        type: 3}
-      propertyPath: m_Name
-      value: Panel - CAVE2 Display
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312770373197466958, guid: 542475707c6b5644dac416d70a41eb31,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7064893528222798075, guid: 542475707c6b5644dac416d70a41eb31,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: headTracker
+      value: 
+      objectReference: {fileID: 1414880794}
     - target: {fileID: 9166429183120138366, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
       propertyPath: m_Enabled
@@ -623,6 +588,41 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 635100186}
+    - target: {fileID: 2018825010303196076, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027452721525705446, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169139798118923136, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169139798118923136, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel - CAVE2 Display
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312770373197466958, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648211220538475457, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064893528222798075, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 542475707c6b5644dac416d70a41eb31, type: 3}
 --- !u!1 &1994641111 stripped
