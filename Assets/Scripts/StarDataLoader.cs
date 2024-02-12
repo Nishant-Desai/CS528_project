@@ -31,7 +31,7 @@ public class StarDataLoader : MonoBehaviour
     {
         Debug.Log("Hello");
         string allData = stardata_file.text;
-        string[] lineData = allData.Split(new[] {Environment.NewLine}, StringSplitOptions.None);
+        string[] lineData = allData.Split('\n');
         for (var i=1; i < lineData.Length-1; i++)
         {
             Debug.Log("Hello");
