@@ -36,9 +36,9 @@ public class StarDataLoader : MonoBehaviour
         {
             Debug.Log("Hello");
             string[] eachline = lineData[i].Split(',');
-            var star = Instantiate(star_prefab, new Vector3(float.Parse(eachline[2]), float.Parse(eachline[3]), float.Parse(eachline[4])), Quaternion.identity, gameObject.transform);
-            star.name = "S" + star_count;
-            star_count++;
+            //var star = Instantiate(star_prefab, new Vector3(float.Parse(eachline[2]), float.Parse(eachline[3]), float.Parse(eachline[4])), Quaternion.identity, gameObject.transform);
+            //star.name = "S" + star_count;
+            //star_count++;
             Debug.Log("Hello");
             LoadData star1 = new LoadData();
             //star1.absoluteMagnitude = float.Parse(eachline[5]);
@@ -46,6 +46,10 @@ public class StarDataLoader : MonoBehaviour
             star1.position = new Vector3(float.Parse(eachline[2]), float.Parse(eachline[3]), float.Parse(eachline[4]));
             star1.hip_no = eachline[0];
             starList.Add(star1);
+
+            var star = Instantiate(star_prefab, star1.position, Quaternion.LookRotation(star1.position), gameObject.transform);
+            star.name = "S" + star_count;
+            star_count++;
         }
         Constellations();
     }
